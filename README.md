@@ -3,7 +3,7 @@
 mostly forked from https://github.com/ricktbaker/beanstalk-nginx-php-fpm, with upgrade php7.1 -> php7.2,
 since aws eb did not support 7.3 yet.
 
-###pre requirements
+### pre requirements
 1. install [aws eb cli ](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-install.html)
 2. fetch and config [aws key and tokens](https://console.aws.amazon.com/iam/home?region=us-west-1#/security_credentials)
 3. ```$eb init``` with new application to use
