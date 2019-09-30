@@ -1,0 +1,18 @@
+branch-defaults:
+  master:
+    environment: cx-eb-nginx-php-fpm-72-test-dev
+    group_suffix: null
+global:
+  application_name: cx-eb-nginx-php-fpm-72-test
+  branch: null
+  default_ec2_keyname: aws-eb
+  default_platform: PHP 7.2
+  default_region: us-west-1
+  include_git_submodules: true
+  instance_profile: null
+  platform_name: null
+  platform_version: null
+  profile: caleb
+  repository: null
+  sc: git
+  workspace_type: Application
