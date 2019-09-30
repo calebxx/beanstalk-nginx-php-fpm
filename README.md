@@ -1,8 +1,17 @@
 ## Replace Apache with Nginx and PHP-FPM on AWS Beanstalk
 
-mostly forked from https://github.com/ricktbaker/beanstalk-nginx-php-fpm
+mostly forked from https://github.com/ricktbaker/beanstalk-nginx-php-fpm, with upgrade php7.1 -> php7.2,
+since aws eb did not support 7.3 yet.
 
-with upgrade php7.1 -> php7.2, since aws eb did not support 7.3 yet.
+###pre requirements
+1. install [aws eb cli ](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-install.html)
+2. fetch and config [aws key and tokens](https://console.aws.amazon.com/iam/home?region=us-west-1#/security_credentials)
+3. ```$eb init``` with new application to use
+4. ```eb create``` create a new instance, with application balancer type
+5. ```eb open``` check the hello echo
+6. here is testing [info.php](http://cx-eb-nginx-php-fpm-72-test-dev.us-west-1.elasticbeanstalk.com/info.php)
+
+## Documents from original repo
 
 If you find yourself wanting to use Nginx and PHP-FPM instead of apache for your AWS Beanstalk PHP App, well good for you!
 
